@@ -1,0 +1,19 @@
+%button {
+   font-weight: bolder;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   background: $wireframe-background-1;
+}
+%button--med {
+   @extend %button;
+   width: calc( ( #{$grid-width} * 2 ) + #{$gutter-width} );
+   padding: .5rem;
+}
+
+.button {
+   &--entry {
+      @extend %button--med;
+      margin-left: $gutter-width;
+   }
+}

@@ -1,0 +1,5 @@
+.sidebar {
+   background: $wireframe-background-1;
+   width: calc( ( #{$grid-width} * 2 ) + #{$gutter-width} );
+   margin-left: $gutter-width;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="assets/css/main.min.css">
+
+   <title>
+
+   </title>
+
+   <meta name="theme-color" content="#000000">
+
+   <script src="assets/js/all.min.js"></script>
+
+   <script>
+      var viewport = {
+         width  : $(window).width(),
+         height : $(window).height()
+      };
+
+      var is_touch_device = function() {
+        return 'ontouchstart' in window // works on most browsers
+            || 'onmsgesturechange' in window; // works on ie10
+      };
+
+      $(document).ready(function(){
+         // pointer events pollyfill
+         PointerEventsPolyfill.initialize();
+      });
+   </script>
+
+   <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+</head>
+<body>
+   <aside class="sidebar">
+
+   </aside>
+   <main>
+      <div class="topbar--dashboard">
+         <a class="button--entry" href="#">درآمد</a>
+         <a class="button--entry" href="#">هزینه</a>
+      </div>
+      <div class="main-stream--dashboard">
+         <div class="records">
+
+         </div>
+         <div class="glance">
+
+         </div>
+      </div>
+   </main>
+</body>
+</html>

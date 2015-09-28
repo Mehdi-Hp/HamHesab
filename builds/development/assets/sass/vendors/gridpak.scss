@@ -1,0 +1,121 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+
+
+/* Reusable column setup */
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 15 Column Grid 0px - Infinity
+    -----------------------------------------------------------------------------
+
+    Span 1:    5.96666666667%
+    Span 2:    12.6833333333%
+    Span 3:    19.4%
+    Span 4:    26.1166666667%
+    Span 5:    32.8333333333%
+    Span 6:    39.55%
+    Span 7:    46.2666666667%
+    Span 8:    52.9833333333%
+    Span 9:    59.7%
+    Span 10:    66.4166666667%
+    Span 11:    73.1333333333%
+    Span 12:    79.85%
+    Span 13:    86.5666666667%
+    Span 14:    93.2833333333%
+    Span 15:    100%
+
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) {
+
+        .col {
+            margin-left:0.75%;
+        	padding:0 0.5%;
+        }
+
+        .row .col:first-child {
+            margin-left:0;
+        }
+
+
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+
+        .span_1 {
+            width:5.96666666667%;
+        }
+        .span_2 {
+            width:12.6833333333%;
+        }
+        .span_3 {
+            width:19.4%;
+        }
+        .span_4 {
+            width:26.1166666667%;
+        }
+        .span_5 {
+            width:32.8333333333%;
+        }
+        .span_6 {
+            width:39.55%;
+        }
+        .span_7 {
+            width:46.2666666667%;
+        }
+        .span_8 {
+            width:52.9833333333%;
+        }
+        .span_9 {
+            width:59.7%;
+        }
+        .span_10 {
+            width:66.4166666667%;
+        }
+        .span_11 {
+            width:73.1333333333%;
+        }
+        .span_12 {
+            width:79.85%;
+        }
+        .span_13 {
+            width:86.5666666667%;
+        }
+        .span_14 {
+            width:93.2833333333%;
+        }
+        .span_15 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+
+    #gridpak {
+    	width: 100%;
+    	height: 100vh;
+    	position: fixed;
+      pointer-events: none;
+      opacity: 0.4;
+   }

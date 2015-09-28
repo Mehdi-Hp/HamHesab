@@ -1,0 +1,11 @@
+%main-stream {
+   display: flex;
+   flex-grow: 1;
+}
+
+
+.main-stream {
+   &--dashboard {
+      @extend %main-stream;
+   }
+}

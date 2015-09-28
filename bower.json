@@ -1,0 +1,21 @@
+{
+  "name": "Starter Kit",
+  "version": "0.0.0",
+  "authors": [
+    "Mehdi HoseiniPajooh"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "pointer_events_polyfill": "https://github.com/kmewhort/pointer_events_polyfill.git",
+    "prefixfree": "prefix-free#gh-pages",
+    "visibilityjs": "~1.2.1"
+  }
+}

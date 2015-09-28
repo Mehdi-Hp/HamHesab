@@ -1,0 +1,36 @@
+### Sass ###
+.sass-cache
+*.css.map
+
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+
+### Jekyll ###
+_site/
+
+### SASS ###
+.sass-cache/
+
+### npm, bower ###
+builds/development/assets/bower/*
+node_modules
+
+
+### Just Development folder ###
+builds/debug/
+builds/production/
