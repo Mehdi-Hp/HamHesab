@@ -15,5 +15,11 @@
    &--entry {
       @extend %button--med;
       margin-left: $gutter-width;
+      padding: 1rem .5rem;
+   }
+   &--records {
+      @extend %button--med;
+      padding: .5rem;
+      margin-bottom: 2rem;
    }
 }

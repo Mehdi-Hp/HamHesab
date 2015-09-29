@@ -1,4 +1,108 @@
+%records-title {
+   width: $grid-width;
+   margin-left: $gutter-width;
+   text-align: center;
+   flex-shrink: 0;
+}
+
 .records {
    width: calc( ( #{$grid-width} * 8 ) + ( #{$gutter-width} * 7 ) );
    margin-left: $gutter-width;
+   position: relative;
+   &__titles {
+      display: flex;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+   }
+   &__title {
+      &--choose {
+         @extend %records-title;
+      }
+      &--code {
+         @extend %records-title;
+      }
+      &--date {
+         @extend %records-title;
+      }
+      &--description {
+         @extend %records-title;
+         width: calc( ( #{$grid-width} * 3 ) + ( #{$gutter-width} * 2 ) );
+      }
+      &--debtor {
+         @extend %records-title;
+      }
+      &--creditor {
+         @extend %records-title;
+      }
+   }
+   &__buttons {
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(0deg,#fff 35%,rgba(255,255,255,0) 100%);
+      right: 0;
+      left: 0;
+      height: 150px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+   }
+}
+
+%record {
+   width: $grid-width;
+   margin-left: $gutter-width;
+   text-align: center;
+   flex-shrink: 0;
+   padding: 0.5rem $padding-width;
+   position: relative;
+}
+%record__divider {
+   content: '';
+   width: 1px;
+   background: $wireframe-background-2;
+   display: inline-flex;
+   height: 1rem;
+   position: absolute;
+   left: 0;
+   transform: translateX(calc( -#{$gutter-width} / 2 ));
+}
+
+.record {
+   background: $wireframe-background-1;
+   display: flex;
+   margin-top: 0.5rem;
+   &__controlls {
+      @extend %record;
+      &:after {
+         @extend %record__divider;
+      }
+   }
+   &__code {
+      @extend %record;
+      &:after {
+         @extend %record__divider;
+      }
+   }
+   &__date {
+      @extend %record;
+      &:after {
+         @extend %record__divider;
+      }
+   }
+   &__description {
+      @extend %record;
+      width: calc( ( #{$grid-width} * 3 ) + ( #{$gutter-width} * 2 ) );
+      &:after {
+         @extend %record__divider;
+      }
+   }
+   &__debtor {
+      @extend %record;
+      &:after {
+         @extend %record__divider;
+      }
+   }
+   &__creditor {
+      @extend %record;
+   }
 }
